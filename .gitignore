@@ -24,17 +24,17 @@ gradle/wrapper/*.jar
 target/
 out/
 # Dependencies
-/node_modules
+node_modules/
 /.pnp
 .pnp.js
 .yarn/install-state.gz
 
 # Testing
-/coverage
+coverage/
 
 # Next.js
-/.next/
-/out/
+.next/
+out/
 
 # Production
 /build
