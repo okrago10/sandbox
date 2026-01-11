@@ -6,11 +6,7 @@ export const metadata: Metadata = {
   description: "Next.js demo application with TypeScript and Tailwind CSS",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="font-sans antialiased">{children}</body>
