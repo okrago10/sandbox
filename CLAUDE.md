@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a monorepo containing independent applications in separate folders:
 1. **springboot-demo**: Next.js 14 + Spring Boot combined demo application
-2. **next.js-demo**: (Planned) Future Next.js standalone application
+2. **nextjs-demo**: Standalone Next.js application with TypeScript and Tailwind CSS
 
 Each project is contained in its own folder under the repository root. Git branches follow the pattern `feature/[project-name]-[description]`.
 
@@ -139,3 +139,43 @@ Both services run independently; coordinate integration points through environme
 **CORS issues between frontend and backend**: Configure Spring Security or use `@CrossOrigin` annotation on controllers
 
 **Node modules or build artifacts cluttering workspace**: Add to .gitignore; run `npm clean-install` for frontend or `./gradlew clean` for backend
+
+## nextjs-demo
+
+Standalone Next.js application for frontend development.
+
+### Quick Commands
+```bash
+cd nextjs-demo
+npm run dev      # Start development server (http://localhost:3000)
+npm run build    # Production build
+npm run start    # Run production build
+npm run lint     # Run ESLint checks
+npm run format   # Format code with Prettier
+```
+
+### Architecture
+- **Framework**: Next.js 16 with App Router and Turbopack
+- **Language**: TypeScript (strict mode)
+- **Styling**: Tailwind CSS v3.4
+- **Linting**: ESLint 9 with flat config (eslint-config-next)
+- **Formatting**: Prettier with Tailwind CSS plugin
+- **React**: React 19
+
+### Key Configuration Files
+- `nextjs-demo/tsconfig.json`: Strict TypeScript with path alias `@/*`
+- `nextjs-demo/next.config.js`: React strict mode enabled
+- `nextjs-demo/tailwind.config.ts`: Tailwind configuration
+- `nextjs-demo/eslint.config.mjs`: ESLint 9 flat config with next/core-web-vitals
+- `nextjs-demo/.prettierrc`: Prettier with Tailwind plugin
+- `nextjs-demo/postcss.config.js`: PostCSS with Tailwind and Autoprefixer
+
+### Project Structure
+- `nextjs-demo/app/` - App Router pages and layouts
+  - `layout.tsx` - Root layout with metadata
+  - `page.tsx` - Home page
+  - `globals.css` - Global styles with Tailwind directives
+
+### Code Quality
+- Run `cd nextjs-demo && npm run lint` before commits
+- Run `cd nextjs-demo && npm run format` to format code
