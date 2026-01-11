@@ -68,3 +68,7 @@ logs
 
 # Local development
 claude-local.md
+
+# Storybook
+*storybook.log
+storybook-static
