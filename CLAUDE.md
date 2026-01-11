@@ -147,19 +147,20 @@ Standalone Next.js application for frontend development.
 ### Quick Commands
 ```bash
 cd nextjs-demo
-npm run dev      # Start development server (http://localhost:3000)
-npm run build    # Production build
-npm run start    # Run production build
-npm run lint     # Run ESLint checks
-npm run format   # Format code with Prettier
+bun run dev      # Start development server (http://localhost:3000)
+bun run build    # Production build
+bun run start    # Run production build
+bun run lint     # Run linting checks
+bun run format   # Format code with oxfmt
 ```
 
 ### Architecture
 - **Framework**: Next.js 16 with App Router and Turbopack
 - **Language**: TypeScript (strict mode)
 - **Styling**: Tailwind CSS v3.4
-- **Linting**: ESLint 9 with flat config (eslint-config-next)
-- **Formatting**: Prettier with Tailwind CSS plugin
+- **Package Manager**: bun
+- **Linting**: oxlint + ESLint 9 with flat config (eslint-config-next)
+- **Formatting**: oxfmt
 - **React**: React 19
 
 ### Key Configuration Files
@@ -167,8 +168,10 @@ npm run format   # Format code with Prettier
 - `nextjs-demo/next.config.js`: React strict mode enabled
 - `nextjs-demo/tailwind.config.ts`: Tailwind configuration
 - `nextjs-demo/eslint.config.mjs`: ESLint 9 flat config with next/core-web-vitals
-- `nextjs-demo/.prettierrc`: Prettier with Tailwind plugin
+- `nextjs-demo/.oxlintrc.json`: Oxlint configuration
+- `nextjs-demo/.oxfmtrc.json`: Oxfmt configuration
 - `nextjs-demo/postcss.config.js`: PostCSS with Tailwind and Autoprefixer
+- `nextjs-demo/bun.lock`: Bun lockfile
 
 ### Project Structure
 - `nextjs-demo/app/` - App Router pages and layouts
@@ -177,5 +180,5 @@ npm run format   # Format code with Prettier
   - `globals.css` - Global styles with Tailwind directives
 
 ### Code Quality
-- Run `cd nextjs-demo && npm run lint` before commits
-- Run `cd nextjs-demo && npm run format` to format code
+- Run `cd nextjs-demo && bun run lint` before commits
+- Run `cd nextjs-demo && bun run format` to format code
