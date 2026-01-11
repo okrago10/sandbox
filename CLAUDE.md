@@ -155,18 +155,20 @@ npm run format   # Format code with Prettier
 ```
 
 ### Architecture
-- **Framework**: Next.js 14 with App Router
+- **Framework**: Next.js 16 with App Router and Turbopack
 - **Language**: TypeScript (strict mode)
 - **Styling**: Tailwind CSS v3.4
-- **Linting**: ESLint with next/core-web-vitals
+- **Linting**: ESLint 9 with flat config (eslint-config-next)
 - **Formatting**: Prettier with Tailwind CSS plugin
+- **React**: React 19
 
 ### Key Configuration Files
 - `nextjs-demo/tsconfig.json`: Strict TypeScript with path alias `@/*`
 - `nextjs-demo/next.config.js`: React strict mode enabled
 - `nextjs-demo/tailwind.config.ts`: Tailwind configuration
-- `nextjs-demo/.eslintrc.json`: Extends next/core-web-vitals
+- `nextjs-demo/eslint.config.mjs`: ESLint 9 flat config with next/core-web-vitals
 - `nextjs-demo/.prettierrc`: Prettier with Tailwind plugin
+- `nextjs-demo/postcss.config.js`: PostCSS with Tailwind and Autoprefixer
 
 ### Project Structure
 - `nextjs-demo/app/` - App Router pages and layouts
