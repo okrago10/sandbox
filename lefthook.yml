@@ -1,0 +1,27 @@
+# Lefthook configuration
+# https://github.com/evilmartians/lefthook
+
+pre-commit:
+  parallel: true
+  jobs:
+    # nextjs-demo: lint and format
+    - name: nextjs-demo lint
+      root: nextjs-demo/
+      glob: "*.{js,jsx,ts,tsx}"
+      run: bun run lint
+
+    - name: nextjs-demo format
+      root: nextjs-demo/
+      glob: "*.{js,jsx,ts,tsx,json,css,md}"
+      run: bun run format
+
+    # springboot-demo frontend: lint and format
+    - name: springboot-demo lint
+      root: springboot-demo/
+      glob: "*.{js,jsx,ts,tsx}"
+      run: npm run lint
+
+    - name: springboot-demo format
+      root: springboot-demo/
+      glob: "*.{js,jsx,ts,tsx,json,css,md}"
+      run: npm run format
