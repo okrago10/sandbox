@@ -2,9 +2,9 @@ import nextConfig from "eslint-config-next";
 
 const config = [
   {
-    ignores: ["storybook-static/**", ".storybook/**"]
+    ignores: ["storybook-static/**", ".storybook/**"],
   },
-  ...nextConfig
+  ...nextConfig,
 ];
 
 export default config;
