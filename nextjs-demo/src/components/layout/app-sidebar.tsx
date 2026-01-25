@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, FileText, Settings } from "lucide-react";
+import { Home, LayoutDashboard, FileText, Settings } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -19,6 +19,7 @@ import {
 
 const menuItems = [
   { title: "Home", icon: Home, url: "/" },
+  { title: "Dashboard", icon: LayoutDashboard, url: "/dashboard" },
   { title: "Documents", icon: FileText, url: "/documents" },
   { title: "Settings", icon: Settings, url: "/settings" },
 ];
