@@ -6,11 +6,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import {
-  getProducts,
-  getStatusLabel,
-  type ProductStatus,
-} from "@/repository/product-repository";
+import { getProducts, getStatusLabel, type ProductStatus } from "@/repository/product-repository";
 
 export const metadata = {
   title: "ダッシュボード | Next.js Demo",
@@ -59,9 +55,7 @@ export default async function DashboardPage() {
           {products.map((product) => (
             <TableRow key={product.id}>
               <TableCell className="font-medium">{product.name}</TableCell>
-              <TableCell className="text-right">
-                {formatPrice(product.price)}
-              </TableCell>
+              <TableCell className="text-right">{formatPrice(product.price)}</TableCell>
               <TableCell>
                 <StatusBadge status={product.status} />
               </TableCell>
