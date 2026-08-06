@@ -11,6 +11,12 @@
       "label": "stacked PR",
       "status": "in_review",
       "description": "Restructured from plain text to JSON per review feedback"
+    },
+    {
+      "id": 3,
+      "label": "stacked PR",
+      "status": "open",
+      "description": "Rebased onto step 2 after review-driven refactor"
     }
   ]
 }
