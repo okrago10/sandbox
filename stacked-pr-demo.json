@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "steps": [
+    {
+      "id": 1,
+      "label": "base PR",
+      "status": "merged"
+    },
+    {
+      "id": 2,
+      "label": "stacked PR",
+      "status": "in_review",
+      "description": "Restructured from plain text to JSON per review feedback"
+    },
+    {
+      "id": 3,
+      "label": "stacked PR",
+      "status": "open",
+      "description": "Rebased onto step 2 after review-driven refactor"
+    },
+    {
+      "id": 4,
+      "label": "stacked PR",
+      "status": "open",
+      "description": "Added as step 4 on top of the stack"
+    }
+  ]
+}
