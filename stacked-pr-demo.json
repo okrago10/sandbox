@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "steps": [
+    {
+      "id": 1,
+      "label": "base PR",
+      "status": "merged"
+    },
+    {
+      "id": 2,
+      "label": "stacked PR",
+      "status": "in_review",
+      "description": "Restructured from plain text to JSON per review feedback"
+    }
+  ]
+}

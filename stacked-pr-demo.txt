@@ -1,2 +1,0 @@
-Stacked PR demo - base PR (step 1)
-Stacked PR demo - stacked PR (step 2)
