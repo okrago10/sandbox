@@ -17,6 +17,12 @@
       "label": "stacked PR",
       "status": "open",
       "description": "Rebased onto step 2 after review-driven refactor"
+    },
+    {
+      "id": 4,
+      "label": "stacked PR",
+      "status": "open",
+      "description": "Added as step 4 on top of the stack"
     }
   ]
 }
