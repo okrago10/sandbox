@@ -8,6 +8,7 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '21'
 
+// Spring Boot 2.7 系が管理する Tomcat は 9.0.123 未満で既知の CVE が未修正のため上書きする。Boot 管理の tomcat.version が 9.0.123 以上になったら削除する
 ext['tomcat.version'] = '9.0.123'
 
 repositories {
