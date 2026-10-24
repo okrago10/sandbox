@@ -8,6 +8,8 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '21'
 
+ext['tomcat.version'] = '9.0.123'
+
 repositories {
 	mavenCentral()
 }
