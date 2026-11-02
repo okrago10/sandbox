@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 This is a monorepo containing independent applications in separate folders:
-1. **springboot-demo**: Next.js 14 + Spring Boot combined demo application
+1. **springboot-demo**: Next.js 16 + Spring Boot combined demo application
 2. **nextjs-demo**: Standalone Next.js application with TypeScript and Tailwind CSS
 
 Each project is contained in its own folder under the repository root. Git branches follow the pattern `feature/[project-name]-[description]`.
