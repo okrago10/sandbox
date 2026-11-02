@@ -2,7 +2,6 @@
 .gradle
 build/
 gradle/wrapper/*.jar
-!gradle/wrapper/gradle-wrapper.jar
 
 # IDEs
 .idea/
@@ -20,6 +19,7 @@ gradle/wrapper/*.jar
 # Java
 *.class
 *.jar
+!**/gradle/wrapper/gradle-wrapper.jar
 *.war
 target/
 out/
