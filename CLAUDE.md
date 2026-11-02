@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 This is a monorepo containing independent applications in separate folders:
-1. **springboot-demo**: Next.js 14 + Spring Boot combined demo application
+1. **springboot-demo**: Next.js 16 + Spring Boot combined demo application
 2. **nextjs-demo**: Standalone Next.js application with TypeScript and Tailwind CSS
 
 Each project is contained in its own folder under the repository root. Git branches follow the pattern `feature/[project-name]-[description]`.
@@ -57,16 +57,16 @@ cd springboot-demo
 ```
 
 #### Architecture
-- **Framework**: Spring Boot 2.7.14
-- **Build Tool**: Gradle
+- **Framework**: Spring Boot 4.1.2
+- **Build Tool**: Gradle 8.14.3 (wrapper)
 - **Java Version**: Java 21
 - **Testing**: JUnit Platform
 
 #### Dependencies
-- **Web**: `spring-boot-starter-web` (REST APIs)
+- **Web**: `spring-boot-starter-webmvc` (REST APIs)
 - **Data**: `spring-boot-starter-data-jpa` (Database ORM)
-- **Database**: H2 (in-memory, runtime-only)
-- **Testing**: `spring-boot-starter-test` (JUnit, Mockito, etc.)
+- **Database**: H2 (in-memory, runtime-only), console via `spring-boot-h2console`
+- **Testing**: `spring-boot-starter-webmvc-test` (JUnit, Mockito, MockMvc, etc.)
 
 #### Project Structure
 - `springboot-demo/src/main/java/com/example/` - Application code
